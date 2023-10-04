@@ -1,30 +1,20 @@
-    <!DOCTYPE html>
-<html>
-<head>
-    <title>Canadian Mortgage Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
     <div class="calculator">
-        <h1>Canadian Mortgage Calculator</h1>
-        <label for="rateInput">Interest Rate (%)</label>
-        <input type="number" id="rateInput" placeholder="Enter interest rate" />
+        <h1>Canadian Investment Property Calculator</h1>
+        <label for="rateInput">Your Mortgage Interest Rate (%)</label>
+        <input type="number" id="rateInput" placeholder="Your Mortgage Interest Rate" />
 
-        <label for="yearsInput">Years</label>
-        <input type="number" id="yearsInput" placeholder="Enter number of years" />
+        <label for="yearsInput">Mortgage Amortization Years</label>
+        <input type="number" id="yearsInput" placeholder="Mortgage Amortization in Years" />
 
-        <label for="paymentInput">Monthly Payment</label>
-        <input type="number" id="paymentInput" placeholder="Enter monthly payment" />
+        <label for="paymentInput">Net Monthly Rental Income</label>
+        <input type="number" id="paymentInput" placeholder="Net Rent Income" />
 
-        <button id="calculateButton">Calculate</button>
+      <p><button id="calculateButton">Calculate</button></p>
 
         <div id="result" class="hidden">
-            <p>Mortgage Amount: <span id="mortgageAmount"></span></p>
-            <p>Break Even Purchase Price: <span id="breakEvenPrice"></span></p>
-            <p>20% Down Payment: <span id="downPayment"></span></p>
+          <p>Break Even Purchase Price:  <span id="breakEvenPrice"></span></p>  
+          <p>      80% Mortgage Amount:  <span id="mortgageAmount"></span></p>
+          <p>         20% Down Payment:  <span id="downPayment"></span></p>
         </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
