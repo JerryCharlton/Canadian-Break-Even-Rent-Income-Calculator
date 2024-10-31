@@ -1,20 +1,33 @@
-    <div class="calculator">
-        <h1>Canadian Investment Property Calculator</h1>
-        <label for="rateInput">Your Mortgage Interest Rate (%)</label>
-        <input type="number" id="rateInput" placeholder="Your Mortgage Interest Rate" />
+   <div class="calculator">
+  <h1>Canadian Break Even<br />Rent Income Calculator</h1>
+  <p>Rent Income less tax and insurance equals the net rent that could make a mortgage payment. How much Mortgage would that payment support with 20% down for a standard rental property mortgage at current interest rates and amortizations?</p>
+  
+  <div><label for="grossRent">Monthly Rent ($)</label> 
+    <input id="grossRent" type="number" value="1500" step="50" 
+           title="Enter the expected monthly rent income for this property" />
+  </div>
 
-        <label for="yearsInput">Mortgage Amortization Years</label>
-        <input type="number" id="yearsInput" placeholder="Mortgage Amortization in Years" />
+  <div><label for="insurance">Monthly Insurance ($)</label> 
+    <input id="insurance" type="number" value="150" step="10" 
+           title="Enter the estimated monthly insurance cost" />
+  </div>
 
-        <label for="paymentInput">Net Monthly Rental Income</label>
-        <input type="number" id="paymentInput" placeholder="Net Rent Income" />
+  <div><label for="propertyTax">Monthly Property Tax ($)</label> 
+    <input id="propertyTax" type="number" value="250" step="10" 
+           title="Enter the estimated monthly property tax expense" />
+  </div>
 
-      <p><button id="calculateButton">Calculate</button></p>
+  <div><label for="rateInput">Interest Rate (%)</label> 
+    <input id="rateInput" type="number" value="4.50" step="0.25" 
+           title="Enter the annual interest rate of the mortgage in percentage" />
+  </div>
 
-        <div id="result" class="hidden">
-          <p>Break Even Purchase Price:  <span id="breakEvenPrice"></span></p>  
-          <p>      80% Mortgage Amount:  <span id="mortgageAmount"></span></p>
-          <p>         20% Down Payment:  <span id="downPayment"></span></p>
-        </div>
-    </div>
-
+  <div><label for="yearsInput">Amortization Term (Years)</label> 
+    <input id="yearsInput" type="number" value="30" step="5" 
+           title="Enter the amortization period of the loan in years" />
+  </div>
+  
+  <button id="calculateButton">Calculate</button>
+  <div id="result">Net Rent/Mortgage Payment<br /> 20% Down Payment<br /> 80% Mortgage Amount<br /> Break Even Purchase Price</div>
+  <script type="text/javascript" src="https://jerrycharlton.com/_media/RentBuysCalculator.js"></script>
+</div>
